@@ -30,7 +30,7 @@ const Footer = ({ isDarkMode }) => {
             </a>
           </li>
           <li>
-            <a target="_blank" href="www.linkedin.com/in/yingping-ma">
+            <a target="_blank" href="https://www.linkedin.com/in/yingping-ma/">
               LinkedIn
             </a>
           </li>
