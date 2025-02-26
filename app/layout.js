@@ -1,4 +1,4 @@
-import { Outfit, Ovo } from "next/font/google";
+import { Outfit, Ovo, EB_Garamond } from "next/font/google";
 import "./globals.css";
 import Background from "./components/Background";
 

@@ -12,14 +12,6 @@ const Skills = () => {
       id="skills"
       className="w-full px-[12%] py-10 scroll-mt-20"
     >
-      <motion.h4
-        initial={{ y: -20, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.3, delay: 0.5 }}
-        className="text-center mb-2 text-lg font-Ovo"
-      >
-        My Skills
-      </motion.h4>
       <motion.h2
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
