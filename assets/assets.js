@@ -123,7 +123,7 @@ export const workData = [
   {
     title: "Budget Tracker",
     description:
-      "A sleek and powerful full-stack budget tracking application built with modern tools like Next.js 14, TypeScript, Prisma ORM, Tailwind CSS, and more.",
+      "A sleek and powerful full-stack budget tracking application built with modern tools like Next.js, TypeScript, Prisma ORM, Tailwind CSS, and more.",
     stack: ["Next.js 14", "TypeScript", "Tailwind CSS", "Prisma ORM", "Clerk"],
     images: ["/budget-1.png", "/budget-2.png", "/budget-3.png"],
     darkImages: [
