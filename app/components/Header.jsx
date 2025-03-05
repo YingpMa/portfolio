@@ -44,7 +44,7 @@ const Header = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1 }}
           href="#contact"
-          className="px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 dark:bg-transparent"
+          className="px-10 py-3 border border-white rounded-full bg-green-600 text-white flex items-center gap-2 dark:bg-transparent dark:border-green-400"
         >
           contact me{" "}
           <Image src={assets.right_arrow_white} alt="" className="w-4" />
@@ -58,6 +58,39 @@ const Header = () => {
           className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black"
         >
           my resume <Image src={assets.download_icon} alt="" className="w-4" />
+        </motion.a>
+      </div>
+      {/* GitHub & LinkedIn 按钮 */}
+      <div className="flex gap-6 mt-6">
+        <motion.a
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 1.4 }}
+          href="https://github.com/YingpMa"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-600 dark:border-white hover:bg-gray-200 dark:hover:bg-gray-800 transition"
+        >
+          <Image
+            src={assets.github_icon}
+            alt="GitHub"
+            className="w-6 dark:invert"
+          />
+        </motion.a>
+        <motion.a
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 1.6 }}
+          href="https://www.linkedin.com/in/yingping-ma/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-600 dark:border-white hover:bg-gray-200 dark:hover:bg-gray-800 transition"
+        >
+          <Image
+            src={assets.linkedin_icon}
+            alt="LinkedIn"
+            className="w-6 dark:invert"
+          />
         </motion.a>
       </div>
     </div>

@@ -29,6 +29,8 @@ import right_arrow from "./right-arrow.png";
 import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
+import github_icon from "./github.svg";
+import linkedin_icon from "./linkedin.svg";
 
 export const skillsData = [
   {
@@ -44,7 +46,6 @@ export const skillsData = [
       { icon: "/icons/redux.svg", name: "Redux" },
       { icon: "/icons/tailwind.svg", name: "Tailwind CSS" },
       { icon: "/icons/shadcn.svg", name: "Shadcn UI" },
-      { icon: "/icons/styled-components.svg", name: "Styled Components" },
       { icon: "/icons/framer-motion.svg", name: "Framer Motion" },
     ],
   },
@@ -114,28 +115,24 @@ export const assets = {
   send_icon,
   right_arrow_bold,
   right_arrow_bold_dark,
+  linkedin_icon,
+  github_icon,
 };
 
 export const workData = [
   {
-    title: "Frontend project",
-    description: "Web Design",
-    bgImage: "/work-1.png",
-  },
-  {
-    title: "Geo based app",
-    description: "Mobile App",
-    bgImage: "/work-2.png",
-  },
-  {
-    title: "Photography site",
-    description: "Web Design",
-    bgImage: "/work-3.png",
-  },
-  {
-    title: "UI/UX designing",
-    description: "UI/UX Design",
-    bgImage: "/work-4.png",
+    title: "Budget Tracker",
+    description:
+      "A sleek and powerful full-stack budget tracking application built with modern tools like Next.js 14, TypeScript, Prisma ORM, Tailwind CSS, and more.",
+    stack: ["Next.js 14", "TypeScript", "Tailwind CSS", "Prisma ORM", "Clerk"],
+    images: ["/budget-1.png", "/budget-2.png", "/budget-3.png"],
+    darkImages: [
+      "/budget-dark-1.png",
+      "/budget-dark-2.png",
+      "/budget-dark-3.png",
+    ],
+    link: "https://budget-tracker-yingping.vercel.app/", // Live Demo 链接
+    github: "https://github.com/YingpMa/budget-tracker", // GitHub 仓库
   },
 ];
 
