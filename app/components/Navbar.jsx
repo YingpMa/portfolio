@@ -53,28 +53,36 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           } `}
         >
           <li>
-            <a className="font-Ovo" href="#top">
+            <a className="font-Ovo relative group inline-block" href="#top">
               Home
+              <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-current transition-all duration-1000 group-hover:w-full"></span>
             </a>
           </li>
           <li>
-            <a className="font-Ovo" href="#about">
+            <a className="font-Ovo relative group inline-block" href="#about">
               About me
+              <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-current transition-all duration-1000 group-hover:w-full"></span>
             </a>
           </li>
           <li>
-            <a className="font-Ovo" href="#skills">
+            <a className="font-Ovo relative group inline-block" href="#skills">
               Skills
+              <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-current transition-all duration-1000 group-hover:w-full"></span>
             </a>
           </li>
           <li>
-            <a className="font-Ovo" href="#projects">
+            <a
+              className="font-Ovo relative group inline-block"
+              href="#projects"
+            >
               Projects
+              <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-current transition-all duration-1000 group-hover:w-full"></span>
             </a>
           </li>
           <li>
-            <a className="font-Ovo" href="#contact">
+            <a className="font-Ovo relative group inline-block" href="#contact">
               Contact me
+              <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-current transition-all duration-1000 group-hover:w-full"></span>
             </a>
           </li>
         </ul>
@@ -92,7 +100,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
 
           <a
             href="#contact"
-            className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/30"
+            className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo relative group"
           >
             Contact{" "}
             <Image
@@ -100,6 +108,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
               alt=""
               className="w-3"
             />
+            <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-current "></span>
           </a>
           <button className="block md:hidden m1-3" onClick={openMenu}>
             <Image
@@ -110,8 +119,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           </button>
         </div>
 
-        {/* -- ----- mobile menu ----- -- */}
-
+        {/* ----- Mobile Menu ----- */}
         <ul
           ref={sideMenuRef}
           className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 dark:bg-darkHover dark:text-white"
@@ -124,28 +132,53 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             />
           </div>
           <li>
-            <a className="font-Ovo" onClick={closeMenu} href="#top">
+            <a
+              className="font-Ovo relative group inline-block"
+              onClick={closeMenu}
+              href="#top"
+            >
               Home
+              <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-current transition-all duration-1000 group-hover:w-full"></span>
             </a>
           </li>
           <li>
-            <a className="font-Ovo" onClick={closeMenu} href="#about">
+            <a
+              className="font-Ovo relative group inline-block"
+              onClick={closeMenu}
+              href="#about"
+            >
               About me
+              <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-current transition-all duration-1000 group-hover:w-full"></span>
             </a>
           </li>
           <li>
-            <a className="font-Ovo" onClick={closeMenu} href="#skills">
+            <a
+              className="font-Ovo relative group inline-block"
+              onClick={closeMenu}
+              href="#skills"
+            >
               Skills
+              <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-current transition-all duration-1000 group-hover:w-full"></span>
             </a>
           </li>
           <li>
-            <a className="font-Ovo" onClick={closeMenu} href="#projects">
+            <a
+              className="font-Ovo relative group inline-block"
+              onClick={closeMenu}
+              href="#projects"
+            >
               Projects
+              <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-current transition-all duration-1000 group-hover:w-full"></span>
             </a>
           </li>
           <li>
-            <a className="font-Ovo" onClick={closeMenu} href="#contact">
+            <a
+              className="font-Ovo relative group inline-block"
+              onClick={closeMenu}
+              href="#contact"
+            >
               Contact me
+              <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-current transition-all duration-1000 group-hover:w-full"></span>
             </a>
           </li>
         </ul>

@@ -62,6 +62,8 @@ export const skillsData = [
       { icon: "/icons/jest.svg", name: "Jest" },
       { icon: "/icons/postman.svg", name: "Postman" },
       { icon: "/icons/clerk.svg", name: "Clerk" },
+      { icon: "icons/sqlite.svg", name: "SQLite" },
+      { icon: "icons/sqlalchemy.svg", name: "SQLAlchemy" },
     ],
   },
   {
@@ -124,7 +126,7 @@ export const workData = [
     title: "Budget Tracker",
     description:
       "A sleek and powerful full-stack budget tracking application built with modern tools like Next.js, TypeScript, Prisma ORM, Tailwind CSS, and more.",
-    stack: ["Next.js 14", "TypeScript", "Tailwind CSS", "Prisma ORM", "Clerk"],
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma ORM", "Clerk"],
     images: ["/budget-1.png", "/budget-2.png", "/budget-3.png"],
     darkImages: [
       "/budget-dark-1.png",
@@ -133,6 +135,16 @@ export const workData = [
     ],
     link: "https://budget-tracker-yingping.vercel.app/", // Live Demo 链接
     github: "https://github.com/YingpMa/budget-tracker", // GitHub 仓库
+  },
+  {
+    title: "Bestie Hub",
+    description:
+      "A full-stack web application that allows users to manage their friendships, built with Flask, React, and Chakra UI.",
+    stack: ["Flask", "React", "Chakra UI", "SQLite", "SQLAlchemy"],
+    images: ["/bestie-1.png", "/bestie-2.png"],
+    darkImages: ["/bestie-dark-1.png", "/bestie-dark-2.png"],
+    link: "https://bestie-hub-yingping.onrender.com/", // Live Demo 链接
+    github: "https://github.com/YingpMa/bestie-hub", // GitHub 仓库
   },
 ];
 

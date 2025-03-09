@@ -53,7 +53,7 @@ const ProjectCard = ({ project, isDarkMode }) => {
 
   return (
     <motion.section
-      className="w-full min-h-screen flex flex-col items-center justify-center px-4 sm:px-8 mt-20"
+      className="w-full min-h-screen flex flex-col items-center justify-center px-4 sm:px-8 mt-10"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
@@ -83,7 +83,6 @@ const ProjectCard = ({ project, isDarkMode }) => {
           }
           alt={project.title}
           className="w-full max-h-[80vh] object-contain rounded-lg shadow-lg"
-          whileHover={{ scale: 1.05 }}
         />
         <button
           onClick={handlePrev}
@@ -98,7 +97,7 @@ const ProjectCard = ({ project, isDarkMode }) => {
           ▶
         </button>
       </div>
-      <div className="flex flex-col sm:flex-row items-center gap-4 mt-12">
+      <div className="flex flex-col sm:flex-row items-center gap-4 mt-12 mb-12">
         <motion.a
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -120,6 +119,7 @@ const ProjectCard = ({ project, isDarkMode }) => {
           <Image src={assets.github_icon} alt="" className="w-4 dark:invert" />
         </motion.a>
       </div>
+      <hr className="w-1/2 mx-auto border-gray-300 dark:border-gray-400 mb-12" />
     </motion.section>
   );
 };
