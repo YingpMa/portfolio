@@ -47,6 +47,7 @@ export const skillsData = [
       { icon: "/icons/tailwind.svg", name: "Tailwind CSS" },
       { icon: "/icons/shadcn.svg", name: "Shadcn UI" },
       { icon: "/icons/framer-motion.svg", name: "Framer Motion" },
+      { icon: "/icons/threedotjs.svg", name: "Three.js" },
     ],
   },
   {
@@ -64,6 +65,7 @@ export const skillsData = [
       { icon: "/icons/clerk.svg", name: "Clerk" },
       { icon: "icons/sqlite.svg", name: "SQLite" },
       { icon: "icons/sqlalchemy.svg", name: "SQLAlchemy" },
+      { icon: "icons/postgresql.svg", name: "PostgreSQL" },
     ],
   },
   {
@@ -72,6 +74,9 @@ export const skillsData = [
       { icon: "/icons/aws.svg", name: "AWS" },
       { icon: "/icons/vercel.svg", name: "Vercel" },
       { icon: "/icons/docker.svg", name: "Docker" },
+      { icon: "/icons/render.svg", name: "Render" },
+      { icon: "/icons/firebase.svg", name: "Firebase" },
+      { icon: "/icons/googlecloud.svg", name: "Google Cloud" },
     ],
   },
   {
@@ -81,6 +86,7 @@ export const skillsData = [
       { icon: "/icons/github.svg", name: "GitHub" },
       { icon: "/icons/webpack.svg", name: "Webpack" },
       { icon: "/icons/figma.svg", name: "Figma" },
+      { icon: "/icons/vite.svg", name: "Vite" },
     ],
   },
 ];
@@ -145,6 +151,38 @@ export const workData = [
     darkImages: ["/bestie-dark-1.png", "/bestie-dark-2.png"],
     link: "https://bestie-hub-yingping.onrender.com/", // Live Demo 链接
     github: "https://github.com/YingpMa/bestie-hub", // GitHub 仓库
+  },
+  {
+    title: "Notes",
+    description:
+      "A sleek full-stack notes app that lets users sign up, log in, create, edit, delete, search, and pin notes.",
+    stack: [
+      "React",
+      "Tailwind CSS",
+      "react-router-dom",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+    ],
+    images: [
+      "/notes-1.png",
+      "/notes-2.png",
+      "/notes-3.png",
+      "/notes-4.png",
+      "/notes-5.png",
+      "/notes-6.png",
+    ],
+    darkImages: [
+      "/notes-dark-1.png",
+      "/notes-dark-2.png",
+      "/notes-dark-3.png",
+      "/notes-dark-4.png",
+      "/notes-dark-5.png",
+      "/notes-dark-6.png",
+    ],
+    link: "https://notes-yingping.vercel.app/login", // Live Demo 链接
+    github: "https://github.com/YingpMa/notes", // GitHub 仓库（请替换为实际仓库链接）
   },
 ];
 

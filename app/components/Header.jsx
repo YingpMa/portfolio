@@ -60,7 +60,7 @@ const Header = () => {
           my resume <Image src={assets.download_icon} alt="" className="w-4" />
         </motion.a>
       </div>
-      {/* GitHub & LinkedIn 按钮 */}
+      {/* GitHub & LinkedIn */}
       <div className="flex gap-6 mt-6">
         <motion.a
           initial={{ y: 30, opacity: 0 }}

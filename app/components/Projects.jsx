@@ -82,17 +82,24 @@ const ProjectCard = ({ project, isDarkMode }) => {
               : project.images[currentImage]
           }
           alt={project.title}
-          className="w-full max-h-[80vh] object-contain rounded-lg shadow-lg"
+          className="w-full max-h-[80vh] object-contain rounded-lg "
         />
         <button
           onClick={handlePrev}
-          className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 bg-black text-white p-2 rounded-full hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-300"
+          className="left-[-20px] absolute sm:-left-14 top-1/2 transform -translate-y-1/2 
+             bg-black text-white p-1 sm:p-2 rounded-full text-sm sm:text-2xl
+             hover:bg-green-600 dark:bg-white dark:text-black dark:hover:bg-pink-500
+             w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center border-3 hover:border-green-500"
         >
           ◀
         </button>
+
         <button
           onClick={handleNext}
-          className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 bg-black text-white p-2 rounded-full hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-300"
+          className="right-[-20px] absolute sm:-right-14 top-1/2 transform -translate-y-1/2 
+             bg-black text-white p-1 sm:p-2 rounded-full text-sm sm:text-2xl
+             hover:bg-green-600 dark:bg-white dark:text-black dark:hover:bg-pink-500
+             w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center"
         >
           ▶
         </button>
@@ -103,22 +110,24 @@ const ProjectCard = ({ project, isDarkMode }) => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1 }}
           href={project.link}
-          className="px-10 py-3 border border-white rounded-full bg-green-600 text-white flex items-center gap-2 dark:bg-transparent dark:border-green-400"
+          className="min-w-[10rem] px-10 py-3 border border-white rounded-full bg-green-600 text-white flex items-center justify-center gap-2 dark:bg-transparent dark:border-green-400 flex-1 sm:flex-none"
         >
-          Live Demo{" "}
+          Live Demo
           <Image src={assets.right_arrow_white} alt="" className="w-4" />
         </motion.a>
+
         <motion.a
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1.2 }}
           href={project.github}
-          className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white text-black dark:bg-gray-800 dark:text-white dark:border-gray-600"
+          className="min-w-[10rem] px-10 py-3 border border-gray-500 rounded-full flex items-center justify-center gap-2 bg-white text-black dark:bg-gray-800 dark:text-white dark:border-gray-600 flex-1 sm:flex-none"
         >
-          GitHub{" "}
+          GitHub
           <Image src={assets.github_icon} alt="" className="w-4 dark:invert" />
         </motion.a>
       </div>
+
       <hr className="w-1/2 mx-auto border-gray-300 dark:border-gray-400 mb-12" />
     </motion.section>
   );
